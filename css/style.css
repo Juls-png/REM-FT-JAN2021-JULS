@@ -14,6 +14,7 @@ body {
 
 h1, h2, h3, h4, h5, h6{
     font-family: 'Roboto Slab', serif;
+    margin-block: 0.2rem;
 }
 
 h1{
@@ -46,8 +47,20 @@ h6{
 
 }
 
+p {
+    line-height: 1.6em;
+    margin-block: 0.6em;
+}
+.container {
+    display: flex; /* or inline-flex */
+    
+  }
+
 header{
     background-color: darkgrey;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
 }
 div {
     /* border: solid 1px yellow;
@@ -63,6 +76,11 @@ div {
     margin: 50px 30px 10px 30px;
 
 }
+
+#card{
+    justify-content: space-around;
+}
+
 button{
     background-color: navy;
     color:white;
@@ -94,10 +112,30 @@ img{
     background-image: url('../img/will-turner-kJ-m-ySku7w-unsplash.jpg');
     background-size: cover;
     background-position: top;
+    flex-direction: column;
+
+    align-items: center;
+    /* This defines the default behavior for how flex items
+     are laid out along the cross axis on the current line. 
+     Think of it as the justify-content version for the cross-axis
+      (perpendicular to the main-axis). */
+    
+    justify-content: space-around;
+    /* This defines the alignment along the main axis.  */
+
+    /* align-content: center; */
+    /* This aligns a flex container’s lines within when there is extra space in
+     the cross-axis, similar to how justify-content aligns individual items within
+     main-axis. */
+    
 }   
 
 #contact{
     height: 50vh;
+    background-color: coral;
+    /* border: 5px solid black; */
+    padding: 50px 100px;
+
 }
 
 #about{
