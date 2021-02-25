@@ -9,7 +9,8 @@ font-family: 'Roboto Slab', serif;
 }
 
 body {
-    margin:0;
+     margin:0 auto;
+     max-width: 1280px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -19,8 +20,8 @@ h1, h2, h3, h4, h5, h6{
 
 h1{
     color:peru;
-    font-size: 5.653rem;
-    
+    /* font-size: 5.653rem; */
+    font-size: 3rem;
 }
 
 h2{
@@ -120,7 +121,7 @@ img{
      Think of it as the justify-content version for the cross-axis
       (perpendicular to the main-axis). */
     
-    justify-content: space-around;
+     justify-content: center; 
     /* This defines the alignment along the main axis.  */
 
     /* align-content: center; */
@@ -146,3 +147,82 @@ footer{
     height: 50vh;
 }
 
+
+/* LINKS */
+a:link, a:visited{
+    background-color:darkblue;
+    text-decoration: none;
+    padding: 10px;
+}
+
+a:hover{
+    background-color: darkcyan;
+}
+
+a:active{
+    background-color: orange;
+}
+
+/* Whyyy?? the a before the class */
+a.menu:link, a.menu:visited{
+    background: none;
+    color: greenyellow;
+}
+
+a.menu:hover{
+    color:darkred;
+}
+
+/* section div h3 {
+    border: 2px dashed blue;
+} */
+
+/* links icons */
+
+a.icon:link {
+    background: none;
+
+}
+
+a.icon:hover {
+    background-color: darkviolet;
+    color:ghostwhite;
+    border-radius: 50%;
+}
+
+img {
+    filter: contrast(100%);
+    filter: grayscale(50%);
+    filter: saturate(200%);
+
+}
+
+/* --------------------------------------------------- */
+/* TABLET */
+@media only screen and (min-width:600px) and (max-width:767px){
+    h1 {
+        background-color: blue;
+        font-size: 4rem;
+    }
+
+}
+
+
+/* ---------------------------------------------------- */
+/* DESKTOP */
+@media only screen and (min-width: 768px) {
+    h1 {
+        background-color: magenta;
+        font-size: 5.653rem;
+    }
+
+}
+
+/* --------------------- */
+/* MOBILE */
+@media only screen and (max-width: 600px) {
+    h1 {
+        background-color: purple;
+    }
+
+}
