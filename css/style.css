@@ -180,7 +180,9 @@ a.menu:hover{
 /* links icons */
 
 a.icon:link {
-    background: none;
+    background-color: darkviolet;
+    color:ghostwhite;
+    border-radius: 50%;
 
 }
 
